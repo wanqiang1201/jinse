@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>LOVE 365 DAYS</title>
+
+<style type="text/css">
+@font-face {
+	font-family: digit;
+	src: url('digital-7_mono.ttf') format("truetype");
+}
+</style>
+
+<link href="css/default.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/garden.js"></script>
+<script type="text/javascript" src="js/functions.js"></script>
+<audio src="郑钧-爱的箴言.mp3" autoplay="true" loop="true"></audio>
+</head>
+
+<body>
+
+<div id="mainDiv">
+	<div id="content">
+		<div id="code">
+			<span class="comments"><--OUR IMPORTANT DAYS</span><br />
+			<span class="space"/><span class="comments">*2013—01-24,</span><br />
+			<span class="space"/><span class="comments">*2013-07-25,</span><br />
+			<span class="space"/><span class="comments">*2013-11-04,</span><br />
+			<span class="space"/><span class="comments">*2013-11-24,</span><br />
+			<span class="space"/><span class="comments">*2014-01-02,</span><br />
+			<span class="space"/><span class="comments">*2014-01-27,</span><br />
+			<span class="space"/><span class="comments">*2014-03-07,</span><br />
+			<span class="space"/><span class="comments">*2014-05-17,</span><br />
+			<span class="space"/><span class="comments">*2014-07-25.--></span><br /><br/>
+			<span class="word"><span class="keyword"> 薛聪</span>,我的爱人:</span><br /><br />
+			<span class="word">今生最幸运的事,就是遇到你.</span><br />
+			<span class="word">初瞥惊鸿,再瞥,已沉醉.</span><br />
+			<span class="word">依稀记得初次见你的欣喜若狂.</span><br />
+			<span class="word">端庄,大方,简直就是我的梦中女神.</span><br />
+			<span class="word">但我不敢奢求拥有你的幻想,</span><br />
+			<span class="word">因为,你在我眼里是那么纯洁,那么神圣,</span><br />
+			<span class="word">让我有了些许自惭形秽的伤感,</span><br />
+			<span class="word">或许,遇到真正喜欢的人才会有这种忧伤.</span><br />
+			<span class="word">从刚开始的纠结,忐忑,到最后的为你痴狂.</span><br />
+			<span class="word">一路走来,庆幸的是,你欣然接受了我.</span><br />
+			<span class="word">你不会知道,当我听到你说喜欢我时,</span><br />
+			<span class="word">我心花的烂漫.</span><br />
+			<span class="word">然而,千里怎能共婵娟.</span><br />
+			<span class="word">我毅然的离开了熟悉的家,来到你的身边.</span><br />
+			<span class="word">因为,我已离不开你的陪伴,</span><br />
+			<span class="word">哪怕是一秒,都顿感黯然.</span><br />
+			<span class="word">我觉得你是上天赐给我的天使,</span><br />
+			<span class="word">让我不再孤单,不再徜徉.</span><br />
+			<span class="word">从你陪伴起,生命乍现曙光.</span><br />
+			<span class="word">遇到坏事可以叙优,</span><br />
+			<span class="word">遇到喜事亦可分享.</span><br />			
+			<span class="word">现在,我们有了自己的宝贝,有了爱情的结晶<span><br />
+			<span class="word">我会更加的呵护你,宠爱你,<span><br />
+			<span class="word">也会学着做一个称职的父亲,成为他/她的榜样!<span><br />
+			<span class="word">你是我生命中最重要的人,</span><br />
+			<span class="word">任时光荏苒,岁月变迁,</span><br />
+			<span class="word">我都要和你在一起.</span><br />
+			<span class="word">共度绝代风华,共品生活韵芳.</span><br />
+			<br>
+			I want to say:<br />
+			WE WILL LOVE, LONG AS TIME!!<br />
+		</div>
+		<div id="loveHeart">
+			<canvas id="garden"></canvas>
+			<div id="words">
+				<div id="messages">
+					Dear <span style="color:#7f0055;font-weight:bold">Cong</span>, it's the time we fall in love:
+					<div id="elapseClock"></div>
+				</div>
+				<div id="loveu">
+					Words cannot express MY LOVE towards <span style="color:#7f0055;font-weight:bold">YOU</span><br/>
+					<div class="signature">WEI CHENG</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+var offsetX = $("#loveHeart").width() / 2;
+var offsetY = $("#loveHeart").height() / 2 - 55;
+var together = new Date();
+together.setFullYear(2013, 6, 25);
+together.setHours(21);
+together.setMinutes(0);
+together.setSeconds(0);
+together.setMilliseconds(0);
+
+if (!document.createElement('canvas').getContext) {
+	var msg = document.createElement("div");
+	msg.id = "errorMsg";
+	msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+";
+	document.body.appendChild(msg);
+	$("#code").css("display", "none")
+	$("#copyright").css("position", "absolute");
+	$("#copyright").css("bottom", "10px");
+	document.execCommand("stop");
+} else {
+	setTimeout(function () {
+		startHeartAnimation();
+	}, 5000);
+
+	timeElapse(together);
+	setInterval(function () {
+		timeElapse(together);
+	}, 500);
+
+	adjustCodePosition();
+	$("#code").typewriter();
+}
+</script>
+</body>
+</html>
