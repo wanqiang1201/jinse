@@ -1,21 +1,28 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript">
-    function getQueryString(name) {
-        var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i');
-        var r = window.location.search.substr(1).match(reg);
-        if (r != null) return (r[2]); return null;
-    }
-    var parameter = getQueryString('page')
-    if (parameter == 'lovexc')
-    {
-        self.location = 'LOVE/loveXC.html';
-    }
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript">
+        function getQueryString(name) {
+            var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i');
+            var r = window.location.search.substr(1).match(reg);
+            if (r != null) return (r[2]); return null;
+        }
+        var parameter = getQueryString('page')
+        switch (n) {
+            case lovexc:
+                self.location = 'LOVE/loveXC.html'
+                break;
+            default:
+        }
+        if (parameter == 'lovexc') {
+            self.location = 'LOVE/loveXC.html';
+        }
 
-</script>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>锦瑟伍拾弦</title>
-<head>锦瑟伍拾弦</head>
+    </script>
+    <title>锦瑟伍拾弦</title>
+</head>
+
+
 <body>扯基扒淡</body>
 </html>
