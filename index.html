@@ -1,7 +1,17 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-	<script type="text/javascript" src="js/jquery.js"></script>
-	<script type="text/javascript">
-		self.location='LOVE/loveXC.html'; 
-	</script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+    function getQueryString(name) {
+        var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i');
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) return (r[2]); return null;
+    }
+    var parameter = getQueryString('page')
+    if (parameter == 'lovexc')
+    {
+        self.location = 'LOVE/loveXC.html';
+    }
+
+</script>
 </html>
