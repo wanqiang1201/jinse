@@ -1087,8 +1087,8 @@
 /*********************************************************************************/
 
 	#intro {
-		background: url('images/overlay.png'), url('../images/intro.jpg');
-		background-size: 1000px 1000px, cover;
+		background:url('../images/intro.jpg');
+		background-size:  cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, bottom center;
 		background-repeat: repeat, no-repeat;
@@ -1099,8 +1099,8 @@
 /*********************************************************************************/
 
 	#one {
-		background: url('images/overlay.png'), url('../images/one.jpg');
-		background-size: 256px 256px, cover;
+		background:  url('../images/one.jpg');
+		background-size: cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
 	}
@@ -1110,8 +1110,8 @@
 /*********************************************************************************/
 
 	#two {
-		background: url('images/overlay.png'), url('../images/two.jpg');
-		background-size: 256px 256px, cover;
+		background: url('../images/two.jpg');
+		background-size: cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
 	}
@@ -1121,8 +1121,8 @@
 /*********************************************************************************/
 
 	#work {
-        background: url('images/overlay.png'), url('../images/three.jpg');
-		background-size: 256px 256px, cover;
+        background: url('../images/three.jpg');
+		background-size: cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
 	}
