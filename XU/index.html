@@ -3,7 +3,6 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>锦瑟伍拾弦</title>
-
     <style type="text/css">
         @font-face { font-family: digit; src: url('digital-7_mono.ttf') format("truetype"); }
     </style>
@@ -20,6 +19,7 @@
     <div id="mainDiv">
         <div id="content">
             <div id="code">
+			<br/><br/><br/>
                 <span class="comments"><span class="keyword">旭姑娘：</span></span><br /><br />
                 <span class="word">依稀记得那天</span><br />
                 <span class="word">幽兰之畔</span><br />
@@ -89,18 +89,11 @@
             msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+";
             document.body.appendChild(msg);
             $("#code").css("display", "none")
-            $("#copyright").css("position", "absolute");
-            $("#copyright").css("bottom", "10px");
             document.execCommand("stop");
         } else {
             setTimeout(function () {
                 startHeartAnimation();
             }, 5000);
-
-            timeElapse(together);
-            setInterval(function () {
-                timeElapse(together);
-            }, 500);
 
             adjustCodePosition();
             $("#code").typewriter();
