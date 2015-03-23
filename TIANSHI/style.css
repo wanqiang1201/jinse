@@ -669,7 +669,7 @@ nav ul.sub-menu > li:last-child > a {
     background-color: rgba(0,0,0,0.35);
     font-weight: 400;
     font-style: italic;
-    font-size: 1.1em;
+    font-size: 1.2em;
     font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -5184,4 +5184,5 @@ footer .row-content.buffer {
         -webkit-text-size-adjust: none;
     }
 }
-      
+
+* { outline-style:none;}
