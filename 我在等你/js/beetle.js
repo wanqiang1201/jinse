@@ -136,7 +136,7 @@ jQuery(document).ready(function ($) {
 
                     $this.owlCarousel({
                         singleItem: true,
-                        autoPlay: autoplay || false, // || = if data- is empty or if it does not exists
+                        autoPlay: 7000 || false, // || = if data- is empty or if it does not exists
                         transitionStyle: transition || false,
                         stopOnHover: true,
                         responsiveBaseWidth: ".slider",
